@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Login Form</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-           background-image: url("4603478a-86fa-40c7-8d34-049a1cd55159.jpg") ;
-           background-repeat: no-repeat;
-           background-attachment: fixed;
-            background-size :100% 100%;
+            background-image: url("4603478a-86fa-40c7-8d34-049a1cd55159.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
         }
 
         .container {
@@ -18,7 +19,19 @@
             border: 1px solid #7395AE;
             border-radius: 60px;
             background-color: #B1B296;
-           
+
+            transform: perspective(1500px) rotateY(15deg);
+            border-radius: 1rem;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+            transition: transform 1s ease 0s;
+
+            &:hover {
+                transform: perspective(3000px) rotateY(5deg);
+            }
+
+
+
+
         }
 
         .container h2 {
@@ -41,24 +54,29 @@
             padding: 10px;
             cursor: pointer;
         }
-        #forgot {
-    display: block;
-    margin: 0 auto;
-    text-align: right;}
-    #bbit{
-        display: block;
-    }
-    #logimage{
-        display: block;
-        margin-left: auto;
-        margin-right: auto; 
-        border-radius: 50px;}
 
+        #forgot {
+            display: block;
+            margin: 0 auto;
+            text-align: right;
+        }
+
+        #bbit {
+            display: block;
+        }
+
+        #logimage {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50px;
+        }
     </style>
 </head>
+
 <body>
-    
-     <div class="container">
+
+    <div class="container">
         <img src="C:\Users\Payal\Desktop\e-com\my-account_720234-removebg-preview.png" id="logimage">
         <h2>Login Form</h2>
         <form action="process-login.php" method="POST">
@@ -69,12 +87,13 @@
             <input type="password" id="password" name="password" required>
 
             <input type="submit" value="Login">
-            
-            <a href="#" id ="bbit">Sign-up</a>
-            <a href="#" id="forgot"name="forgot">forgot password</a>
-          
+
+            <a href="#" id="bbit">Sign-up</a>
+            <a href="#" id="forgot" name="forgot">forgot password</a>
+
         </form>
     </div>
-</div>
+    </div>
 </body>
+
 </html>
