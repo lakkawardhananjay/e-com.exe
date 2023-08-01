@@ -35,16 +35,20 @@
 
         .container label,
         .container input[type="text"],
-        .container input[type="password"]
-         {
+        .container input[type="password"],
+        .container input[type="submit"] {
             display: block;
             width: 100%;
-            border-radius: 9px;
             margin-bottom: 10px;
-
         }
 
-
+        .container input[type="submit"] {
+            background-color: #557A95;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
 
         #forgot {
             display: block;
@@ -62,25 +66,13 @@
             margin-right: auto;
             border-radius: 50px;
         }
-        .button{
-            background-color: #557A95;
-            color: white;
-            border: none;
-            padding: 10px 136px;
-            cursor: pointer;
-            border-radius: 10px;
-        }
-       /* #button:hover
-        {
-box-shadow: 5px 5px 10px #000000   ;
-        } */
     </style>
 </head>
 
 <body>
 
     <div class="container">
-        <img src="my-account_720234-removebg-preview.png" id="logimage">
+        <img src="Images/my-account_720234-removebg-preview.png" id="logimage">
         <h2>Login Form</h2>
         <form action="process-login.php" method="POST">
             <label for="username">Username:</label>
@@ -89,7 +81,7 @@ box-shadow: 5px 5px 10px #000000   ;
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
 
-            <button class="button">Login</button>
+            <input type="submit" value="Login">
 
             <a href="Sign_up.html" id="bbit">Sign-up</a>
             <a href="#" id="forgot" name="forgot">forgot password</a>
