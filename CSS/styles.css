@@ -1,60 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #24252a;
+@font-face {
+    font-family: tomo;
+    src: url(/Fonts/Rhesmanisa.otf);
 }
 
-li, a, button, h1{
-    font-family: "Kanit", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #edf0f1;
-    text-decoration: none;
-}
-
-header {
-    position: fixed;
-    width: 100%;
-    height: 70px;
+#header {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    padding: 10px 10%;
-}
-.img{
-    padding-top: 50px;
-}
-.logo {
-    cursor: pointer;
-    margin-right: auto;
+    justify-content: space-between;
+    padding: 0px 80px;
+    background: #379683;
+    box-shadow: 0px 3px;
+
 }
 
-.nav_links{
+#nav_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+
+}
+
+#nav_links li {
     list-style: none;
-}
-
-.nav_links li{
-    display: inline-block; 
     padding: 0px 20px;
+    position: relative;
+
 }
 
-.nav_links li a:hover{
-    color: #0088a9
+#nav_links li a {
+    text-decoration: none;
+    color: #000000;
 }
 
-button {
-    margin-left: 20px;
-    padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+#nav_links li a:hover,
+#nav_links li a.active {
+    transition: 0.3s ease;
+    color: #ffffff;
+    border-radius: 10px;
 }
 
-button:hover {
-    background-color: rgb(1, 64, 79);
+#nav_links li a.active::after,
+#nav_links li a:hover::after {
+    content: "";
+    width: 33%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -4px;
+    left: 23px;
+}
+
+body {
+    margin: 0px;
+}
+
+.img {
+    padding-top: 2px;
+    width: 36%;
+    height: auto;
+}
+
+.land1 {
+   
+    width: 100%;
+     
+    background-color: #a79e97;
+    
+}
+.land0
+{  
+    font-family: tomo;
+}
+
+.cta {
+    text-decoration: none;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    will-change: transform;
+}
+
+.cta:disabled {
+    pointer-events: none;
+}
+
+.cta:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.cta:active {
+    box-shadow: none;
+    transform: translateY(0);
 }
