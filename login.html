@@ -7,16 +7,17 @@
             font-family: Arial, sans-serif;
            background-color: #5d5c61;;
             background-repeat: no-repeat;
-        
+         color: white;
         }
-
+        
         .container {
+            padding-top: 10px;
             width: 300px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px;
             border: 1px solid #7395AE;
             border-radius: 60px;
-            background-color: #B1B296;
+            background-color:#2F4550;
 
             transform: perspective(1500px) rotateY(15deg);
             border-radius: 1rem;
@@ -43,21 +44,39 @@
         }
 
         .container input[type="submit"] {
-            background-color: #557A95;
-            color: white;
+            background-color: white;
+             width: 306px;
             border: none;
             padding: 10px;
             cursor: pointer;
         }
 
         #forgot {
-            display: block;
-            margin: 0 auto;
-            text-align: right;
+            float :right;
+            width: auto;
+            text-decoration: none;
+             display: block; 
+            /* margin: 0 auto; */
+            /* text-align: right; */
+            /* float: left; */
+            color:white;
+            /* padding-bottom: 10px; */
         }
 
         #bbit {
+            float: left;
+            width: 50%;
             display: block;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            /* padding-right: 30px; */
+            
+            
+        }#forgot:hover{color: rgba(0, 0, 0, 0.25);}
+        #bbit:hover
+        {
+            color:rgba(0, 0, 0, 0.25);
+    ;
         }
 
         #logimage {
@@ -82,10 +101,9 @@
             <input type="password" id="password" name="password" required>
 
             <input type="submit" value="Login">
-
-            <a href="Sign_up.html" id="bbit">Sign-up</a>
-            <a href="#" id="forgot" name="forgot">forgot password</a>
-
+<a href="Sign_up.html" id="bbit">Sign-up</a>
+        
+<a href="#" id="forgot" name="forgot">Forgot Password</a>
         </form>
     </div>
     </div>
