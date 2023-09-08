@@ -1,0 +1,27 @@
+.product {
+    max-width: 1080px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.col-1 {
+    flex-basis: 50%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 30px;
+    color: #ffffff;
+
+}
+
+.col-1 img {
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+}
